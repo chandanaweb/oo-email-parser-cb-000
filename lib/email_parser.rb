@@ -8,7 +8,7 @@ class EmailParser
   end
   def parse
     newList = @emails.gsub(/,*\s+/,',')
-    newList.split(",")
-    newList.uniq
+    updatedList = newList.split(",")
+    updatedList.uniq
   end
 end
