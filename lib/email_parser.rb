@@ -5,6 +5,7 @@
 class EmailParser
   def initialize(emails)
     @emails = emails
-    @emails.split(\[]\)
+    new_emails = @emails.split(/[\,+]/)
+    new_emails
   end
 end
