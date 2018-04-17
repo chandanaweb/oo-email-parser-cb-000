@@ -7,7 +7,7 @@ class EmailParser
     @emails = emails
   end
   def parse
-    newList = @emails.gsub(',','').split( /  */ ).join(',')
+    newList = @emails.gsub(/,*\s+/,',')
     newList.split(",")
   end
 end
